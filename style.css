@@ -1,0 +1,184 @@
+:root {
+    --primary-glow: #19557d;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0D1117;
+    background-image: 
+        radial-gradient(at 90% 10%, hsla(195, 60%, 30%, 0.4) 0px, transparent 50%),
+        radial-gradient(at 10% 20%, hsla(265, 60%, 35%, 0.4) 0px, transparent 50%);
+    background-attachment: fixed;
+    color: #e0e0e0;
+}
+
+.navbar {
+    background-color: #2C2C2C;
+    backdrop-filter: blur(20px);
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: var(--primary-glow);
+}
+
+.section {
+    min-height: 100vh;
+    padding: 100px 20px;
+}
+
+.section-title {
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 50px;
+    text-shadow: 0 0 10px var(--primary-glow);
+}
+
+
+/* === Halaman Home === */
+.profile-img-home {
+     width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #333;
+    box-shadow: 0 0 15px rgba(13, 110, 253, 0.6),
+                inset 0 0 10px rgba(13, 110, 253, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-img-home:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(13, 110, 253, 0.8),
+                inset 0 0 15px rgba(13, 110, 253, 0.5);
+}
+
+
+
+/* === Halaman About === */
+.about-me-box {
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 30px;
+    transition: box-shadow 0.3s ease;
+}
+
+.about-me-box:hover {
+    box-shadow: 0 0 15px rgba(13, 110, 253, 0.3);
+}
+
+.profile-img-about {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #333;
+}
+
+.about-title {
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.skills-section {
+    padding-top: 20px;
+}
+
+.skill-box {
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+    border-color: #0d6efd;
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.2);
+}
+
+.skill-icon {
+    font-size: 3rem;
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+.skill-box p {
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #e0e0e0;
+}
+
+
+/* === Halaman Projects === */
+.project-card {
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #0d6efd;
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.25);
+}
+
+.project-card .card-img-top {
+    border-bottom: 1px solid #333;
+}
+
+.project-card .card-body {
+    padding: 20px;
+}
+
+.project-card .card-title {
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.project-links {
+    text-align: right;
+}
+
+.project-links a {
+    color: #888;
+    font-size: 1.5rem;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+    color: #0d6efd;
+}
+
+
+/* === Halaman Contact === */
+.social-icon {
+    font-size: 2.5rem;
+    color: #aaa;
+    margin: 0 15px;
+    
+}
+
+.social-icon:hover {
+    color: var(--primary-glow);
+    
+}
