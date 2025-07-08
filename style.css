@@ -1,11 +1,14 @@
-/* === Global Styles === */
 :root {
     --primary-glow: #19557d;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #1f1f1f;
+    background-color: #0D1117;
+    background-image: 
+        radial-gradient(at 90% 10%, hsla(195, 60%, 30%, 0.4) 0px, transparent 50%),
+        radial-gradient(at 10% 20%, hsla(265, 60%, 35%, 0.4) 0px, transparent 50%);
+    background-attachment: fixed;
     color: #e0e0e0;
 }
 
